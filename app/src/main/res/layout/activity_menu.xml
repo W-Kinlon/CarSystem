@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEBCD"
+    android:gravity="center"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="车辆信息管理"
+        android:textColor="#000"
+        android:onClick="carInfoManage"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="租车信息管理"
+        android:textColor="#000"
+        android:onClick="rentInfoManage"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="还车信息管理"
+        android:textColor="#000"
+        android:onClick="returnInfoManage"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="修车信息管理"
+        android:textColor="#000"
+        android:onClick="fixInfoManage"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="利润分析"
+        android:textColor="#000"
+        android:onClick="getProfit"/>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="读取"-->
+<!--        android:onClick="getJson"/>-->
+
+</LinearLayout>

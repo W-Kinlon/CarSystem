@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFEBCD"
+    tools:context=".pages.dbPage">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:isScrollContainer="true"/>
+
+
+    <LinearLayout
+        android:background="#FFFACD"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/eds">
+            <EditText
+                android:hint="id"
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:onClick="Add"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"/>
+        <Button
+            android:onClick="Upgrade"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"/>
+        <Button
+            android:onClick="Delete"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"/>
+        <Button
+            android:onClick="Refresh"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

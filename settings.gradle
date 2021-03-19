@@ -1,0 +1,3 @@
+include ':nomalapp'
+include ':app'
+rootProject.name = "JavaApplication"
